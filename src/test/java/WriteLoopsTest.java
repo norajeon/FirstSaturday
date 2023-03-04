@@ -135,8 +135,11 @@ public class WriteLoopsTest
     }
 
     @Test
-    public void foo() {
+    public void rewriteFooAsFor() {
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(, writeLoo1.foo());
+        assertEquals(7, writeLoo1.rewriteFooAsFor());
     }
+    @Test
+
 }
+} //

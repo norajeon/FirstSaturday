@@ -174,8 +174,9 @@ while(!gpsCurrentLocation().equals("Home")) {
             w = w + 1; }
  currentScore = gameNextScore();
             // each time through the inner loop
+
         
-        return (currentScore>= 3); // >= 3;
+        return (currentScore >= 3);
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
@@ -195,7 +196,7 @@ while(!gpsCurrentLocation().equals("Home")) {
 
             // each time through the inner loop
 
-        return currentScore <= 3;
+        return ( currentScore<= 3);
     }
 
     // Write a WHILE loop that checks “serverIsRunning()” and if true
@@ -265,10 +266,12 @@ while (i < 50) {
     public int rewriteFooAsFor() {
         int w = 0;
         int sumOfThrees = 0;
-
+for (int i =0; i < threes_array.length; i++) {
+    w = w+1;
+    sumOfThrees = threes_array[i] + sumOfThrees;
+}
  
             // calling
-            w = w + 1;
             // each time through the inner loop
         
         System.out.print("The Sum is ");
@@ -304,11 +307,18 @@ while (i < 50) {
     public int manageYardAndJunior() {
         int w = 0;
         boolean onTime = true;
+        boolean yardNeedsMowed = true;
+        while (isSummer()) {
+            w = w + 1;
+            if (yardNeedsMowed){
+
+                yellAtJuniorToMowLawn();}
+        }
+        sendJuniorBackToSchool("");
 
         // ADD YOUR CODE here.
  
             // be sure to call
-            w = w + 1;
             // each time inside the loop
         
         return w;
