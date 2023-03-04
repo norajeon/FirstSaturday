@@ -332,12 +332,12 @@ for (int i =0; i < threes_array.length; i++) {
     public int tallyVote1() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
-
- 
+    for (int i = 0; i < numberOfVotes; i++) {
+        System.out.println(voteTallies[i]);
             // calling
-            w = w + 1;
+            w = w + 1;}
             // each time through the inner loop
-        
+
         return w;
     }
 
@@ -347,10 +347,15 @@ for (int i =0; i < threes_array.length; i++) {
     public int tallyVote2() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
-
+    int idx = 0;
+    while(idx < numberOfVotes) {
+        idx++;
+        w = w + 1;
+        System.out.println(voteTallies[idx]);
+    }
 
             // calling
-            w = w + 1;
+
             // each time through the inner loop
         
         return w;
@@ -409,7 +414,6 @@ for (int i =0; i < threes_array.length; i++) {
 
     private void sendJuniorBackToSchool(String timeForSchool) {
         if (!timeForSchool.equalsIgnoreCase("First Day of School")) {
-            throw new IllegalArgumentException();
         }
         /* dammit, mow the yard */}
 

@@ -139,7 +139,14 @@ public class WriteLoopsTest
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(7, writeLoo1.rewriteFooAsFor());
     }
-    @Test
 
-}
+    @Test
+    public void tallyVote1() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(13, writeLoo1.tallyVote1());
+    }
+   
+
+
+
 } //
